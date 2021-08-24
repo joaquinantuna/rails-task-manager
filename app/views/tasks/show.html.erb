@@ -6,7 +6,7 @@
 <p><%= @task.details %></p>
 <p><%= @task.completed %></p>
 
-<a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/tasks/2">
+<a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href=<%= task_path(@task) %>>
   Delete the task
 </a>
 <br>

@@ -17,7 +17,7 @@ class TasksController < ApplicationController
     @task.save
     # Will raise ActiveModel::ForbiddenAttributesError
     # no need for app/views/restaurants/create.html.erb
-    redirect_to task_path(@task)
+    redirect_to tasks_path
   end
 
   def edit
@@ -27,7 +27,7 @@ class TasksController < ApplicationController
     @task.update(task_params)
     # Will raise ActiveModel::ForbiddenAttributesError
     # no need for app/views/restaurants/update.html.erb
-    redirect_to task_path(@task)
+    redirect_to tasks_path
   end
 
   def destroy
